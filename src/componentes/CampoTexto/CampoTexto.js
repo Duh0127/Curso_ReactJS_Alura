@@ -1,9 +1,9 @@
 import './CampoTexto.css';
 
-export const CampoTexto = () => {
+export const CampoTexto = (props) => {
     return(
         <div className='campo-texto'>
-            <label>Nome:</label>
+            <label>{props.label}</label>
             <input type="text" />
         </div>
     )
