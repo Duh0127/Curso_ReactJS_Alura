@@ -55,10 +55,17 @@ function App() {
       <Banner />
       <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} times={times.map(time => time.nome)} />
                                                                 {/* passando por parametro, apenas o nome dos times, utilizando o map */}
-      { times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>) }
+      {times.map(time => <Time 
+        key={time.nome} 
+        nome={time.nome} 
+        corPrimaria={time.corPrimaria} 
+        corSecundaria={time.corSecundaria}
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+      />)}
       {/*map de times, armazenando na variavel 'time', que cria um objeto <Time>, contendo o nome, que puxa da variavel do map  */}
       {/* key é utilizada para controlar a renderização dos filhos do array 'times' */}
       {/* estamos passando por parâmetro as cores primarias e secundarias do array 'times' */}
+      {/* criamos um filtro, com uma arrowFunction, com a condição de adicionar o colaborador de acordo com o nome do time */}
     </div>
   );
 }

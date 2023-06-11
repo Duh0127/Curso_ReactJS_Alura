@@ -9,3 +9,10 @@
     display: inline-block; /*deixa o display apenas pro tamanho do conteúdo da tag*/
     padding-bottom: 8px;
 }
+
+.time .colaboradores{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
