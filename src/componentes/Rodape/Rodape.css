@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6278f7;
+    height: 16vh;
+}
+
+footer .social-media{
+    display: flex;
+    justify-content: space-around;
+    width: 8%;
+}
+footer .social-media img{
+    width: 24px;
+}
+
+footer p{
+    color: #fff;
+}

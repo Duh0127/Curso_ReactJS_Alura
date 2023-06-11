@@ -21,6 +21,10 @@ const Formulario = (props) => {
             time
         })
         // console.log('Form foi submetido!', nome, cargo, imagem, time);
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('') //tags para resetar o state, quando clicar no botão
     }
 
     return (

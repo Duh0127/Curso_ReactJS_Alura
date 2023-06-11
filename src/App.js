@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
+import Rodape from './componentes/Rodape';
 
 function App() {
 
@@ -66,6 +67,8 @@ function App() {
       {/* key é utilizada para controlar a renderização dos filhos do array 'times' */}
       {/* estamos passando por parâmetro as cores primarias e secundarias do array 'times' */}
       {/* criamos um filtro, com uma arrowFunction, com a condição de adicionar o colaborador de acordo com o nome do time */}
+    
+      <Rodape/>
     </div>
   );
 }
